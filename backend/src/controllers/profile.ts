@@ -36,7 +36,6 @@ const getProfile = async (req: Request, res: Response) => {
     });
     return;
   }
-  console.log('userId', userId);
   try {
     const profile = await findUserById(String(userId));
     return res.json(profile);

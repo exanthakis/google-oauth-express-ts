@@ -97,7 +97,6 @@ const googleAuthCallback = async (req: Request, res: Response) => {
 
         const newUser = await createUser(user);
         userId = newUser?._id;
-        console.log(newUser);
       } catch (err) {
         console.error('Error creating user');
       }
